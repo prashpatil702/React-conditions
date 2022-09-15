@@ -22,7 +22,7 @@ function CustomObject() {
     ]
 
     // const objects = persons.map(p => <h2>I am {p.name}</h2> )
-    const objects = persons.map(p => <Person p={p}></Person> )
+    const objects = persons.map(p => <Person key={p.id} p={p}></Person> )
     return (
         <div>{objects}</div>
     )
