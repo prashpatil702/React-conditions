@@ -1,4 +1,5 @@
 import React from 'react'
+import Person from './Person'
 
 function CustomObject() {
 
@@ -20,7 +21,7 @@ function CustomObject() {
         }
     ]
 
-    const objects = persons.map(p =><h1>{p.salary}</h1> )
+    const objects = persons.map(p => (<Person key={p.id} p={persons} /> ))
 
     return (
         <div>{objects}</div>
